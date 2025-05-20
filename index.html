@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Each Block[s]</title>
+    <!-- Link to the external CSS file for styling -->
     <link href="public/style.css" type="text/css" rel="stylesheet">
+    <!-- Include Handlebars.js library -->
     <script src="handlebars.min.js"></script>
-    <!-- Add an {{each}} helper block in the <script> element below-->
+    <!-- Handlebars template using the #each helper to render each item in newArray -->
     <script id="eachHelper" type="text/x-handlebars-template">
       {{#each newArray}}
         <div class="block">{{this}}</div>
       {{/each}}
-    
     </script>
   </head>
   <body>
     <h1>Each Block[s]</h1>
+    <!-- Container where the rendered Handlebars template will be inserted -->
     <div id="display">
     </div>
+    <!-- Main JavaScript file that compiles and renders the Handlebars template -->
     <script src="public/main.js" type="text/javascript"></script>
   </body>
 </html>

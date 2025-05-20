@@ -1,24 +1,27 @@
+/* Set background color for the page */
 body {
   background-color: #0F1931;
 }
 
+/* Style for the main heading */
 h1 {
   color: white;
   font-family: Verdana;
-	font-weight: normal;
+  font-weight: normal;
   text-align: center;
 }
 
+/* Container for the blocks */
 #display {
   margin: 0 15%;
   width: 30%;
 }
 
+/* Style for each block rendered by Handlebars */
 .block {
   border: 20px solid #7C4723;
   border-radius: 5px;
-  box-shadow:
-    0 0 0 2px hsl(0, 0%, 80%);
+  box-shadow: 0 0 0 2px hsl(0, 0%, 80%);
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -27,10 +30,11 @@ h1 {
   margin-bottom: 4px;
   padding: 15%;
   position: relative;
-	text-align: center;
+  text-align: center;
   width: 90px;
 }
 
+/* Alternate background colors and margin for each block */
 .block:nth-child(1n){
   background-color: #fa4359;
   margin-left: 70px;
